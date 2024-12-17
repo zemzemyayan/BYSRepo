@@ -11,6 +11,10 @@ namespace Bussiness.Concrete
 {
     public class CourseManager : ICourseService
     {
+
+        // bu katmana iş kuralları yazılır ama biz en temel metotları yazdık(crud)
+        //Kullanıcı girişleri ya da bir işlemin gereksinimlerinin doğru olup olmadığını kontrol eder vb.
+
         private readonly ICourseRepository _courseRepository;
 
         public CourseManager(ICourseRepository courseRepository)

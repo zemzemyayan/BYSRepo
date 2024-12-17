@@ -1,5 +1,7 @@
 ﻿using DataAccess.Abstarct;
+using DataAccess.Context;
 using Entitiy.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +12,15 @@ namespace DataAccess.Concrete
 {
     public class StudentRepository : IStudentRepository
     {
-        private readonly List<Student> _students = new();
+        private readonly bysContext _context;
+        private readonly DbSet<Student> _students;
+
+        public StudentRepository(bysContext context)
+        {
+            _context = context;
+            _students = context.Set<Student>(); // DbSet<Course> veritabanı ile etkileşim sağlar
+        }
+
 
         // yeni bir öğrenci ekler
         public void Add(Student entity)
@@ -46,7 +56,7 @@ namespace DataAccess.Concrete
         // tüm öğrencileri getirir
         public List<Student> GetAll()
         {
-            return _students;
+            return _students.ToList();
         }
 
         // öğrencin aldığı kurs ıd degerine göre getirir

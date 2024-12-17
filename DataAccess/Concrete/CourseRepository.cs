@@ -1,5 +1,7 @@
 ﻿using DataAccess.Abstarct;
+using DataAccess.Context;
 using Entitiy.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,12 +13,22 @@ namespace DataAccess.Concrete
     public class CourseRepository : ICourseRepository
     {
 
-        private readonly List<Course> _courses = new();
+        private readonly bysContext _context;
+        private readonly DbSet<Course> _courses;
+
+        public CourseRepository(bysContext context)
+        {
+            _context = context;
+            _courses = context.Set<Course>(); // DbSet<Course> veritabanı ile etkileşim sağlar
+        }
+        
+       
 
         // kurs ekleme
         public void Add(Course entity)
         {
             _courses.Add(entity);
+            _context.SaveChanges();
         }
 
         // kurs günvcelleme
@@ -29,12 +41,14 @@ namespace DataAccess.Concrete
                 course.Credits = entity.Credits;
                 course.InstructorId = entity.InstructorId;
             }
+            _context.SaveChanges();
         }
 
         // kurs kaydı silme
         public void Delete(Course entity)
         {
             _courses.Remove(entity);
+            _context.SaveChanges();
         }
 
         //ıd göre kurs getirme
@@ -46,7 +60,7 @@ namespace DataAccess.Concrete
         //tüm kursları listeleme
         public List<Course> GetAll()
         {
-            return _courses;
+            return _courses.ToList(); ;
         }
 
         // akademisyen ıd degerine göre kurs listeleme

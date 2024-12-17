@@ -12,3 +12,18 @@ C:\Users\HP\Desktop\Veri Tabanı\VTProjesi\Bys\Entitiy\obj\Debug\net8.0\refint\E
 C:\Users\HP\Desktop\Veri Tabanı\VTProjesi\Bys\Entitiy\obj\Debug\net8.0\Entitiy.pdb
 C:\Users\HP\Desktop\Veri Tabanı\VTProjesi\Bys\Entitiy\obj\Debug\net8.0\Entitiy.genruntimeconfig.cache
 C:\Users\HP\Desktop\Veri Tabanı\VTProjesi\Bys\Entitiy\obj\Debug\net8.0\ref\Entitiy.dll
+C:\Users\HP\Desktop\VeriTabanı\Bys\Entitiy\bin\Debug\net8.0\Entitiy.deps.json
+C:\Users\HP\Desktop\VeriTabanı\Bys\Entitiy\bin\Debug\net8.0\Entitiy.runtimeconfig.json
+C:\Users\HP\Desktop\VeriTabanı\Bys\Entitiy\bin\Debug\net8.0\Entitiy.dll
+C:\Users\HP\Desktop\VeriTabanı\Bys\Entitiy\bin\Debug\net8.0\Entitiy.pdb
+C:\Users\HP\Desktop\VeriTabanı\Bys\Entitiy\obj\Debug\net8.0\Entitiy.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\VeriTabanı\Bys\Entitiy\obj\Debug\net8.0\Entitiy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\VeriTabanı\Bys\Entitiy\obj\Debug\net8.0\Entitiy.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\VeriTabanı\Bys\Entitiy\obj\Debug\net8.0\Entitiy.AssemblyInfo.cs
+C:\Users\HP\Desktop\VeriTabanı\Bys\Entitiy\obj\Debug\net8.0\Entitiy.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\VeriTabanı\Bys\Entitiy\obj\Debug\net8.0\Entitiy.sourcelink.json
+C:\Users\HP\Desktop\VeriTabanı\Bys\Entitiy\obj\Debug\net8.0\Entitiy.dll
+C:\Users\HP\Desktop\VeriTabanı\Bys\Entitiy\obj\Debug\net8.0\refint\Entitiy.dll
+C:\Users\HP\Desktop\VeriTabanı\Bys\Entitiy\obj\Debug\net8.0\Entitiy.pdb
+C:\Users\HP\Desktop\VeriTabanı\Bys\Entitiy\obj\Debug\net8.0\Entitiy.genruntimeconfig.cache
+C:\Users\HP\Desktop\VeriTabanı\Bys\Entitiy\obj\Debug\net8.0\ref\Entitiy.dll

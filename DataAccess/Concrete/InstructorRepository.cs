@@ -1,5 +1,7 @@
 ﻿using DataAccess.Abstarct;
+using DataAccess.Context;
 using Entitiy.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,8 +13,14 @@ namespace DataAccess.Concrete
     public class InstructorRepository : IInstructorRepository
     {
 
+        private readonly bysContext _context;
+        private readonly DbSet<Instructor> _instructors;
 
-        private readonly List<Instructor> _instructors = new();
+        public InstructorRepository(bysContext context)
+        {
+            _context = context;
+            _instructors = context.Set<Instructor>(); // DbSet<Course> veritabanı ile etkileşim sağlar
+        }
 
         //yeni bir akademisyen ekler
         public void Add(Instructor entity)
@@ -48,7 +56,7 @@ namespace DataAccess.Concrete
         // tüm akademisyenleri getirir
         public List<Instructor> GetAll()
         {
-            return _instructors;
+            return _instructors.ToList();
         }
 
         //görevlerine göre akademisyen getirir

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +15,7 @@ namespace Entitiy.Entities
         public int Credits { get; set; }
 
         // bu dersi hangi öğrentmen veriyor 
+
         public int InstructorId { get; set; } // Foreign Key
         public Instructor Instructor { get; set; }
         //ders nesnesinden öğretmen nesnesine navigasyon sağlar. Bi dersin hangi akademisyen tarafından 
